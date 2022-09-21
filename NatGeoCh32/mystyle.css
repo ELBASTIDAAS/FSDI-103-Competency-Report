@@ -85,11 +85,24 @@ header p{
     font-size: 20;
     text-transform: uppercase;
 }
-p span.susbribe-word{
-
+p span.subscribe-word{
+    color: white;
+    border-bottom: 2px solid yellow;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom,black 50%, var(--primary) 50%);
+    transition: background-position .1s ease-in-out, color .1s ease-in-out;
+}
+span.subscribe-word:hover{
+    background-position: 0 100%;
+    color: black;
 }
 div.border{
-
+    border-bottom-style: solid;
+    border-color: #ffcc00;
+    border-width: 4px;
+    padding: 12px;
+    margin-right: 47%;
+    margin-left: 47%;
 }
 /*body
 .news-container{
