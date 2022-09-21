@@ -34,7 +34,7 @@ a {
     margin-left: 20px;
 }
 .link-search, .link-news, .link-menu{
-display: none;
+    display: none;
 }
 .link-login{
     color: black;
@@ -59,8 +59,8 @@ display: none;
     box-shadow: inset 0 0 0 0 var(--primary);
 }
 .link-arrows{
-color: black;
-margin-right: 20px;
+    color: black;
+    margin-right: 20px;
 }
 .link-subs:hover{
     background-color: var(--primary);
@@ -74,11 +74,11 @@ header{
     height: 20vh;
 }
 header h1{
-text-align: center;
- font-size: 38px;
- text-transform: uppercase;
- letter-spacing: 5px;
- margin-bottom: 25px;
+    text-align: center;
+    font-size: 38px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 25px;
 }
 header p{
     text-align: center;
@@ -104,39 +104,48 @@ div.border{
     margin-right: 47%;
     margin-left: 47%;
 }
-/*body
-.news-container{
-
-}
+/*mains news secction*/
 .main-news{
     position: relative;
-    display: block;
+    margin-bottom: 20px;
 }
-
-.alineartexto{
+.main-news-text{
     position: absolute;
-    top: 80%;
-    left: 17%;
-    transform: translate(-50%, -50%);
-    font-size: 40px;
+    top: 250px;
+    left: 20px;
 }
-.alineartexto1{
-    position: absolute;
-    top: 88%;
-    left: 23%;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
+.main-news-text h3{
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
 }
-.alineartexto2{
-    position: absolute;
-    top: 95%;
-    left: 5%;
-    transform: translate(-50%, -50%);
+.main-news-text p{
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
 }
-.secondary-news{
-    
+.main-news-text h4{
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 12px;
 }
-*/
+/*secondary-news secction*/
+.secondary-news {
+    margin-bottom: 20px;
+}
+.secondary-news img{
+    min-width: 100%;
+}
+.secondary-news-text{
+    background-color: white;
+    color: black;
+    margin-top: -10px;
+    padding: 20px;
+}
+/*body
 .news-container{
     margin: auto;
     position: relative;
@@ -144,31 +153,10 @@ div.border{
 .news-container img{
     width: 100%;
     height: 100%;
-    transition: width 2s, height 4s;
 }
 .news-container img :hover{
     width: 300px;
     height: 300px;
     transform: rotate(180deg);
 }
-.main-news h3{
-    position: absolute;
-    font-size: 30px;
-    top: 25%;
-    left: 13%;
-    transform: translate(-50%, -50%);
-}
-.main-news p{
-    position: absolute;
-    font-size: 25px;
-    top: 28%;
-    left: 29%;
-    transform: translate(-50%, -50%);
-}
-.main-news h4{
-    position: absolute;
-    font-size: 20px;
-    top: 31%;
-    left: 7%;
-    transform: translate(-50%, -50%);
-}
+*/
