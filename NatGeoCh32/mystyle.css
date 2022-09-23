@@ -144,16 +144,18 @@ div.border{
         display: flex;
         flex-direction: row-reverse;
     }
-
 }
 .main-news{
     position: relative;
     margin-bottom: 20px;
-    
+}
+.main-news :hover img{
+    transform: scale(1.1);
+    cursor: pointer;
 }
 .main-news-text{
     position: absolute;
-    top: 200px;
+    top: 340px;
     left: 20px;
 }
 .main-news-text h3{
@@ -174,6 +176,7 @@ div.border{
     letter-spacing: 3px;
     font-size: 12px;
 }
+
 /*secondary-news secction*/
 
 @media(min-width:768px){
@@ -257,12 +260,14 @@ div.border{
     margin-left: 50px;
     margin-right: 80px;
 }
+
 .pick-item h4{
     text-transform: uppercase;
     font-size: 15px;
     padding-bottom: 5px;
     margin-left: 50px;
 }
+
 .pick-item p{
     font-size: 18px;
     font-weight: bold;
@@ -270,6 +275,10 @@ div.border{
     margin-bottom: 20px;
     margin-left: 50px;
     margin-right: 40px;
+}
+.pick-item :hover p{
+    cursor: pointer;
+    text-decoration: underline;
 }
 .pick-item img{
     width: 100px;
