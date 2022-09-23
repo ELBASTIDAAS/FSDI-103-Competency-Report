@@ -113,7 +113,9 @@ div.border{
 .main-news{
     position: relative;
     margin-bottom: 20px;
+    
 }
+
 .main-news-text{
     position: absolute;
     top: 200px;
@@ -145,7 +147,6 @@ div.border{
 .secondary-news img{
     min-width: 100%;
     color: white;
-    border-bottom: 5px solid rgb(255, 220, 20);
 }
 .secondary-news-text{
     background-color: white;
