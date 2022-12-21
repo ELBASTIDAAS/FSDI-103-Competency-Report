@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/NatGeoCh32/images/icono.ico">
+    <script src="https://kit.fontawesome.com/337be747ec.js" crossorigin="anonymous"></script>
+    <title>Login</title>
+</head>
+<style>
+    body {
+        background-color: black;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(241, 243, 241);
+    }
+
+    ul img {
+        margin-top: 5px;
+        width: 110px;
+        height: 35px;
+    }
+
+    li {
+        float: right;
+        font-family: 'Lato', sans-serif;
+        color: black;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+    li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 10px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: white;
+    }
+
+    .active {
+        background-color: white;
+    }
+
+    .contedor {
+        display: flex;
+        flex-direction: row;
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="menu-navigation" id="navbar">
+
+            <ul>
+                <img src="/NatGeoCh32/images/ng-logo-2fl.png" alt="logo">
+                <li><a href="/NatGeoCh32/pages/user.html">USER</a></li>
+                <li><a class="active" href="/NatGeoCh32/pages/login.html">LOGIN</a></li>
+                <li><a href="/NatGeoCh32/pages/index.html">HOME</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Email input -->
+        <section class="vh-100 gradient-custom">
+            <div class="container py-5 h-100">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                        <div class="card bg-light text-dark" style="border-radius: 1rem;">
+                            <div class="card-body p-5 text-center">
+
+                                <div class="mb-md-5 mt-md-4 pb-5">
+
+                                    <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+
+                                    <div class="form-outline form-white mb-4">
+                                        <input type="email" id="inputUserName" class="form-control form-control-lg" />
+                                        <label class="form-label" for="typeEmailX">Email</label>
+                                    </div>
+
+                                    <div class="form-outline form-white mb-4">
+                                        <input type="password" id="inputPassword"
+                                            class="form-control form-control-lg" />
+                                        <label class="form-label" for="typePasswordX">Password</label>
+                                    </div>
+                                    <button class="btn btn-outline-dark btn-lg px-5" type="submit"
+                                        onclick="login();">Login</button>
+
+                                    <div class="d-flex justify-content-center text-center mt-4 pt-1">
+                                        <a href="#!" class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
+                                        <a href="#!" class="text-white"><i
+                                                class="fab fa-twitter fa-lg mx-4 px-2"></i></a>
+                                        <a href="#!" class="text-white"><i class="fab fa-google fa-lg"></i></a>
+                                    </div>
+
+                                </div>
+                                <div>
+                                    <a href="/NatGeoCh32/pages/register.html">Registrate aqui</a>
+                                </div>
+                                <div>
+                                    <p class="mb-0 text-dark">Don't have an account? <a href="/views/register.html"
+                                            class="text-dark-50 fw-bold">Sign Up</a>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- this is the login section-->
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="/NatGeoCh32/javaScript/storeManager.js"></script>
+    <script src="/NatGeoCh32/javaScript/app.js"></script>
+    <script src="/NatGeoCh32/javaScript/login.js"></script>
+    <!--Create register.html with a form with the next fields:  email, password, first name, last name, age, address, phone number, payment, color-->
+</body>
+
+</html>

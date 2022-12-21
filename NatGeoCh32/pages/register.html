@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/NatGeoCh32/images/icono.ico">
+    <title>Register</title>
+</head>
+<style>
+    ul img {
+        margin-top: 5px;
+        width: 110px;
+        height: 35px;
+    }
+    li {
+        float: right;
+        font-family: 'Lato', sans-serif;
+        color: black;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+    body {
+        background-color: black;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(241, 243, 241);
+    }
+
+    li {
+        float: right;
+    }
+
+    li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 10px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: white;
+    }
+
+    .active {
+        background-color: white;
+    }
+
+    .contedor {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .form-label {
+        color: white;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .form-control {
+        width: 500px;
+        margin-bottom: 10px;
+    }
+
+    .centrado {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="header__nav" id="navbar">
+            <ul>
+                <img src="/NatGeoCh32/images/ng-logo-2fl.png" alt="logo">
+                <li><a href="/NatGeoCh32/pages/user.html">USER</a></li>
+                <li><a class="active" href="/NatGeoCh32/pages/register.html">REGISTER</a></li>
+                <li><a href="/NatGeoCh32/pages/login.html">LOGIN</a></li>
+                <li><a href="/NatGeoCh32/pages/index.html">HOME</a></li>
+            </ul>
+        </nav>
+        <h1 style="text-align: center; color: white;">Registration</h1>
+    </header>
+    <main class="container">
+
+        <!--email, password, first name, last name, age, address, phone number, payment, color-->
+        <div>
+            <div>
+                <label class="form-label" for="">Email:</label>
+                <input class="form-control" type="email" name="" id="txtEmail">
+            </div>
+            <div>
+                <label class="form-label" for="">Password:</label>
+                <input class="form-control" type="password" name="" id="txtPassword">
+            </div>
+            <div>
+                <label class="form-label" for="">First name:</label>
+                <input class="form-control" type="name" name="" id="txtFName">
+            </div>
+            <div>
+                <label class="form-label" for="">Last name:</label>
+                <input class="form-control" type="name" name="" id="txtLName">
+            </div>
+            <div>
+                <label class="form-label" for="">Age:</label>
+                <input class="form-control" type="number" name="" id="txtAge">
+            </div>
+            <div>
+                <label class="form-label" for="">Address:</label>
+                <input class="form-control" type="text" name="" id="txtAddress">
+            </div>
+            <div>
+                <label class="form-label" for="">Phone number:</label>
+                <input class="form-control" type="phone" name="" id="txtPhone">
+            </div>
+            <div class="centrado">
+                <label class="form-label" for="">Payment method</label>
+                <select name="" id="selPayment">
+                    <option value="cash">Cash</option>
+                    <option value="credit">Credit card</option>
+                    <option value="paypal">Paypal</option>
+                </select>
+            </div>
+            <div class="centrado">
+                <label class="form-label" for="">Favorite color:</label>
+                <input type="color" name="" id="selColor">
+            </div>
+            <div class="col text-center">
+                <button class="btn btn-light" id="" onclick="register();">Register</button>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="/NatGeoCh32/javaScript/storeManager.js"></script>
+    <script src="/NatGeoCh32/javaScript/app.js"></script>
+</body>
+
+</html>

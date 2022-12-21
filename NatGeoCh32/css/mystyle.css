@@ -119,6 +119,7 @@ header p{
     font-size: 20;
     text-transform: uppercase;
 }
+
 p span.subscribe-word{
     color: white;
     border-bottom: 2px solid yellow;
@@ -200,6 +201,7 @@ div.border{
 .secondary-news img{
     min-width: 100%;
 }
+
 .secondary-news-text{
     background-color: white;
     color: black;
@@ -210,7 +212,7 @@ div.border{
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 3px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .secondary-news-text p{
     font-size: 20px;
@@ -284,4 +286,37 @@ div.border{
     width: 100px;
     height: 100px;
     margin-bottom: 30px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(241, 243, 241);
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: white;
+}
+
+.active {
+    background-color: white;
+}
+
+.contedor{
+    display: flex;
+    flex-direction: row;
 }
